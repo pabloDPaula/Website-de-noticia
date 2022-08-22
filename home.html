@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias.com | Notícias do brasil</title>
+    <!--   Scripts bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- Script de icones do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- CSS da página Home-->
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h3>Notícias.com</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html"
+                            id="titulo-pagina"><strong>INICIO</strong></a>
+                    </li>
+                    <li class="nav-item dropdown me-1">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="titulo-pagina">
+                            <strong>NOTÍCIAS</strong>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./paginas/Tecnologia/index.html">Tecnologia</a></li>
+                            <li><a class="dropdown-item" href="./paginas/Politica/index.html">Política</a></li>
+                            <li><a class="dropdown-item" href="./paginas/Esporte/index.html">Esporte</a></li>
+                            <li><a class="dropdown-item" href="./paginas/Entretenimento/index.html">Entretenimento</a></li>
+                            <li><a class="dropdown-item" href="./paginas/Saude/index.html">Saúde</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="titulo-pagina"><strong>CONTATO</strong></a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Pesquisar" aria-label="Search" aria-describedby="search-addon" />
+                        <span class="input-group-text border-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container noticias">
+        <div class="row mt-5 mb-5">
+            <div class="row">
+                <a href="./paginas/Tecnologia/index.html">
+                    <h2 id="titulo-noticia">Tecnologia</h2>
+                </a>
+            </div>
+            <div class="row mt-3">
+                <div class="col-7">
+                    <a href="./paginas/Tecnologia/noticias/noticia1/index.html">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/tec1.jpg" class="card-img"
+                                alt="Competição de fotografia revela imagens impressionantes de criaturas na natureza">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title" id="subtitulo-imagem">Competição de fotografia revela imagens
+                                    impressionantes de criaturas na natureza</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5 mt-2">
+                    <a href="./paginas/Tecnologia/noticias/noticia2/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/tec2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">StoneCo desaba mais de 20% após balanço,
+                                            projeções e saída de diretor financeiro
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Tecnologia/noticias/noticia3/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/tec3.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Lua e Marte estão em conjunção nesta sexta;
+                                            veja como observar fenômeno
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Tecnologia/noticias/noticia4/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/tec4.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Cosmonauta russo interrompe caminhada
+                                            espacial por problema em bateria no traje
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 mb-5 conteudo">
+            <div class="row">
+                <a href="./paginas/Politica/index.html">
+                    <h2 id="titulo-noticia">Política</h2>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col me-2">
+                    <a href="./paginas/Politica/noticias/noticia1/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/politica1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Lula e Bolsonaro não querem apresentar propostas
+                                    nem prestar contas, diz Tebet</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Politica/noticias/noticia2/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/politica2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Ciro Gomes critica lucro e distribuição de
+                                    dividendos da Petrobras</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Politica/noticias/noticia3/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/politica3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Embaixadas consideram Ciro Nogueira ‘vago’ na
+                                    defesa das urnas em evento dos Poderes e destacam fala de Toffoli</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Politica/noticias/noticia4/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/politica4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Ministra do TSE nega pedido de Lula para apagar
+                                    postagens de Bolsonaro sobre PCC</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 mb-5">
+            <div class="row">
+                <a href="./paginas/Esporte/index.html">
+                    <h2 id="titulo-noticia">Esporte</h2>
+                </a>
+            </div>
+            <div class="row mt-3">
+                <div class="col-7">
+                    <a href="./paginas/Esporte/noticias/noticia1/index.html">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/esporte1.jpg" class="card-img"
+                                alt="Competição de fotografia revela imagens impressionantes de criaturas na natureza">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title" id="subtitulo-imagem">Brasil enfrentará Gana e Tunísia nos últimos jogos
+                                    antes da Copa do Mundo</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5 mt-2">
+                    <a href="./paginas/Esporte/noticias/noticia2/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/esporte2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Casemiro quer se transferir para o
+                                            Manchester
+                                            United, diz Ancelotti
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Esporte/noticias/noticia3/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/esporte3.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Flu e São Paulo fazem primeiro jogo em casa
+                                            na
+                                            semifinal da Copa do Brasil
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Esporte/noticias/noticia4/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/esporte4.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Brasileirão Série B: final de semana tem
+                                            Grêmio x
+                                            Cruzeiro e dérbi de Campinas
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 mb-5">
+            <div class="row">
+                <a href="./paginas/Entretenimento/index.html">
+                    <h2 id="titulo-noticia">Entretenimento</h2>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col me-2">
+                    <a href="./paginas/Entretenimento/noticias/noticia1/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/entretenimento1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Os filmes que chegam aos cinemas brasileiros nesta
+                                    semana</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Entretenimento/noticias/noticia2/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/entretenimento2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Ouça à playlist do episódio “Terra de Caubóis” do
+                                    Entre Mundos com Pedro Andrade</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Entretenimento/noticias/noticia3/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/entretenimento3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Simone e Simaria anunciam fim da dupla</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col me-2">
+                    <a href="./paginas/Entretenimento/noticias/noticia4/index.html">
+                        <div class="card mt-4" style="width: 17rem;">
+                            <img src="./imagens/entretenimento4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title" id="subtitulo">Briga de Brad Pitt e Angelina Jolie em 2016:
+                                    relatório do FBI revela novos fatos</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row mt-5 mb-5">
+            <div class="row">
+                <a href="./paginas/Saude/index.html">
+                    <h2 id="titulo-noticia">Saúde</h2>
+                </a>
+            </div>
+            <div class="row mt-3">
+                <div class="col-7">
+                    <a href="./paginas/Saude/noticias/noticia1/index.html">
+                        <div class="card text-bg-dark">
+                            <img src="./imagens/saude1.jpg" class="card-img"
+                                alt="Competição de fotografia revela imagens impressionantes de criaturas na natureza">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title" id="subtitulo-imagem">Há cinco dias, média móvel de mortes por Covid no
+                                    país está abaixo de 200</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-5 mt-2">
+                    <a href="./paginas/Saude/noticias/noticia2/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/saude2.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Dia D de vacinação contra a poliomielite e
+                                            multivacinação acontece neste sábado
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Saude/noticias/noticia3/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/saude3.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Pfizer envia à Anvisa pedido de uso emergencial da
+                                            vacina contra a Ômicron
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./paginas/Saude/noticias/noticia4/index.html">
+                        <div class="card mb-5" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="./imagens/saude4.jpg" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h3 class="card-title" id="subtitulo">Covid-19 provoca ao menos uma sequela em 65% dos
+                                            brasileiros, diz estudo
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Notícias.com
+                </h6>
+                <p>
+                  As Melhores notícias você encontra aqui
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">CONTATO</h6>
+                <p><i class="fas fa-home me-3"></i> Umuarama, PR 10012, BR</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  noticias@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i>44 9980-3624</p>
+                <p><i class="fas fa-print me-3"></i>44 5842-1092</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2022 Copyright:
+          <a class="text-reset fw-bold">Notícias.com</a>
+        </div>
+      </footer>
+</body>
+
+</html>
