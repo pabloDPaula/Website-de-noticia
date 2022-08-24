@@ -30,7 +30,6 @@
         $("#telefone").mask('(00) 00000-0000');
 
         $('#form-contato').submit(function () {
-            console.log('gfdhfghgfdh');
             var nome = $('#nome');
             var email = $('#email');
             var telefone = $('#telefone');
@@ -47,14 +46,17 @@
 
 
             if (nome.val() == '') {
-                erroNome.html('Digite um nome');
+                mensagemErroNome = 'Digite um nome';
+                erroNome.html(mensagemErroNome);
                 nome.addClass('is-invalid');
             } else {
                 if (regNome.test(nome.val().trim()) == false || nome.val().length <= 3) {
-                    erroNome.html('Digite um nome válido, acima de 3 caracteres');
+                    mensagemErroNome = 'Digite um nome válido, acima de 3 caracteres';
+                    erroNome.html(mensagemErroNome);
                     nome.addClass('is-invalid');
                 } else {
-                    erroNome.html('');
+                    mensagemErroNome = '';
+                    erroNome.html(mensagemErroNome);
                     nome.removeClass('is-invalid');
                     nome.addClass('is-valid');
                 }
@@ -62,47 +64,60 @@
 
 
             if (regEmail.test(email.val()) == false) {
-                erroEmail.html('Digite um email');
+                mensagemErroEmail = 'Digite um email';
+                erroEmail.html(mensagemErroEmail);
                 email.addClass('is-invalid');
             } else {
-                erroEmail.html('');
+                mensagemErroEmail = '';
+                erroEmail.html(mensagemErroEmail);
                 email.removeClass('is-invalid');
                 email.addClass('is-valid');
             }
 
             if (telefone.val() == '') {
-                erroTelefone.html('Digite um telefone');
+                mensagemErroTelefone = 'Digite um telefone';
+                erroTelefone.html(mensagemErroTelefone);
                 telefone.addClass('is-invalid');
             } else {
                 if (telefone.val().length < 15) {
-                    erroTelefone.html('telefone inválido');
+                    mensagemErroTelefone = 'telefone inválido';
+                    erroTelefone.html(mensagemErroTelefone);
                     telefone.addClass('is-invalid');
                 } else {
-                    erroTelefone.html('');
+                    mensagemErroTelefone = '';
+                    erroTelefone.html(mensagemErroTelefone);
                     telefone.removeClass('is-invalid');
                     telefone.addClass('is-valid');
-                    console.log(telefone.val())
                 }
             }
 
             if (estado.val() == '') {
-                erroEstado.html('Selecione um estado');
+                mensagemErroEstado = 'Selecione um estado';
+                erroEstado.html(mensagemErroEstado);
                 estado.addClass('is-invalid');
             } else {
-                erroEstado.html('');
+                mensagemErroEstado = '';
+                erroEstado.html(mensagemErroEstado);
                 estado.removeClass('is-invalid');
                 estado.addClass('is-valid');
             }
 
 
             if (mensagem.val() == '') {
-                erroMensagem.html('Digite uma mensagem');
+                mensagemErroMensagem = 'Digite uma mensagem';
+                erroMensagem.html(mensagemErroMensagem);
                 mensagem.addClass('is-invalid');
             } else {
-                erroMensagem.html('');
+                mensagemErroMensagem = '';
+                erroMensagem.html(mensagemErroMensagem);
                 mensagem.removeClass('is-invalid');
                 mensagem.addClass('is-valid');
             }
+
+            if (mensagemErroNome == '' && mensagemErroEmail == '' && mensagemErroTelefone == '' && mensagemErroEstado == '' && mensagemErroMensagem == '') {
+                $('#confirmarEnvio').modal('show')
+            }
+
             return false
         });
     });
@@ -226,9 +241,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <button class="btn btn-primary" type="submit">Enviar</button>
-            </div>
+            
+                <button class="btn btn-primary" type="submit" data-toggle="modal"
+                    data-target="#confirmarEnvio">Enviar</button>
+
+                <div id="confirmarEnvio" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Mensagem enviada com sucesso</h5>
+                                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
         </form>
     </div>
     <footer class="text-center text-lg-start bg-light text-muted">

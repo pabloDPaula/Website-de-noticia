@@ -41,7 +41,7 @@ a:hover {
 }
 
 #subtitulo-imagem {
-    padding-top: 280px;
+    padding-top: 300px;
     font-weight: bold;
 }
 
@@ -56,3 +56,84 @@ a:hover {
 .noticias{
     padding-top: 100px; 
 }
+
+#noticia-vertical{
+    padding-top: 25px;
+}
+
+#noticia-horizontal{
+    width: 17rem;
+}
+
+@media (max-width:1399px){
+    #subtitulo-imagem{
+        padding-top: 240px;
+    }
+
+    #subtitulo{
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    #noticia-vertical{
+        padding-top: 17px;
+    }
+
+    #noticia-horizontal{
+        width: 16rem;
+    }
+}
+
+@media (max-width:1199px){
+    #subtitulo-imagem{
+        padding-top: 150px;
+    }
+
+    #subtitulo{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    #noticia-vertical{
+        padding-top: 0px;
+    }
+
+    #noticia-horizontal{
+        width: 13rem;
+    }
+}
+
+
+@media (max-width:991px){
+    #subtitulo-imagem{
+        padding-top: 270px;
+    }
+
+    #noticia-vertical{
+        padding-top: 20px;
+    }
+
+    #subtitulo{
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    #titulo-noticia{
+        text-align: center;
+    }
+
+    #noticia-horizontal{
+        width: 20rem;
+        margin-left: 180px;
+    }
+}
+
+
+
+@media (max-width:767px){
+    #noticia-horizontal{
+        width: 20rem;
+        margin-left: 90px;
+    }
+}
+
